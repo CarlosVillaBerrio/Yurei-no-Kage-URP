@@ -22,4 +22,9 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("SchoolLevel");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
