@@ -2799,7 +2799,64 @@ SkinnedMeshRenderer:
   - {fileID: 4155985963652186027}
   - {fileID: 3239164407703921109}
   - {fileID: 4811638579778443023}
-  m_BlendShapeWeights: []
+  m_BlendShapeWeights:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   m_RootBone: {fileID: 7375144275636868212}
   m_AABB:
     m_Center: {x: -0.000000007450581, y: 1.2321678, z: 0.021625211}
@@ -5391,7 +5448,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7793816136045406993}
   - component: {fileID: 6263450581690861741}
-  - component: {fileID: 5222651098038752957}
   - component: {fileID: 811944123063307141}
   m_Layer: 3
   m_Name: FaceCam
@@ -5409,7 +5465,7 @@ Transform:
   m_GameObject: {fileID: 5493381988717938593}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0003031734, y: -0.9991326, z: 0.040797178, w: 0.008343827}
-  m_LocalPosition: {x: 0.01, y: 1.2493868, z: 0.4209386}
+  m_LocalPosition: {x: 0.01, y: 1.25, z: 0.4209386}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5466,14 +5522,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &5222651098038752957
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5493381988717938593}
-  m_Enabled: 1
 --- !u!114 &811944123063307141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5790,7 +5838,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5906620169208170881}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfba4ccd3f854e64f868ce83553071a9, type: 3}
   m_Name: 
