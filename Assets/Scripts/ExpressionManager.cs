@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class ExpressionManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Animator yukiAnimator;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Item"))
+        {
+            yukiAnimator.SetBool("isTakingObject", true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        if (other.CompareTag("Item"))
+        {
+            yukiAnimator.SetBool("isTakingObject", false);
+        }
     }
 }
