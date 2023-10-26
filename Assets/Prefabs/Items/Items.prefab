@@ -93,6 +93,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8061718633405400359, guid: 678835a96c621b44bb30e8e78475da05,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.7456713
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061718633405400359, guid: 678835a96c621b44bb30e8e78475da05,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.37283516
+      objectReference: {fileID: 0}
     - target: {fileID: 9044815985081250721, guid: 678835a96c621b44bb30e8e78475da05,
         type: 3}
       propertyPath: m_Name
@@ -177,6 +187,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061718633405400359, guid: ae1c41ceb856ea7459cc8ae5b9e75026,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.3780527
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061718633405400359, guid: ae1c41ceb856ea7459cc8ae5b9e75026,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 1.1890261
       objectReference: {fileID: 0}
     - target: {fileID: 9044815985081250721, guid: ae1c41ceb856ea7459cc8ae5b9e75026,
         type: 3}
@@ -263,6 +283,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8061718633405400359, guid: d328444ccdeb27546895b0a01fed7053,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.2674177
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061718633405400359, guid: d328444ccdeb27546895b0a01fed7053,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 1.133708
+      objectReference: {fileID: 0}
     - target: {fileID: 9044815985081250721, guid: d328444ccdeb27546895b0a01fed7053,
         type: 3}
       propertyPath: m_Name
@@ -347,6 +377,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061718633405400359, guid: ae1c41ceb856ea7459cc8ae5b9e75026,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.8158276
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061718633405400359, guid: ae1c41ceb856ea7459cc8ae5b9e75026,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.40791258
       objectReference: {fileID: 0}
     - target: {fileID: 9044815985081250721, guid: ae1c41ceb856ea7459cc8ae5b9e75026,
         type: 3}

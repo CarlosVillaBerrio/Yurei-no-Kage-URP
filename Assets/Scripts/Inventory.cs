@@ -9,6 +9,9 @@ public class Inventory : MonoBehaviour
     public List<InventoryItem> inventoryItems;
     public Dictionary<ItemData, InventoryItem> inventoryDictionary;
 
+    public DoorManager doorManager;
+
+
 
     private void Awake()
     {
@@ -16,6 +19,7 @@ public class Inventory : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
+
     }
 
     private void Start()
@@ -36,6 +40,9 @@ public class Inventory : MonoBehaviour
             inventoryItems.Add(newItem);
             inventoryDictionary.Add(_item, newItem);
         }
+
+        doorManager.CheckForDoors(_item);
+
     }
 
     public void RemoveItem(ItemData _item)

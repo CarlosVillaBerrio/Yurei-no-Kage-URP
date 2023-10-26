@@ -17,6 +17,8 @@ public class ItemObject : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Inventory.instance.AddItem(itemData);
+
+            Destroy(gameObject);
         }   
     }
 }
