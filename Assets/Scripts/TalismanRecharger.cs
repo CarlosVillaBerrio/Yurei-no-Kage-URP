@@ -20,7 +20,6 @@ public class TalismanRecharger : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("Recharger found");
             other.gameObject.GetComponentInChildren<TalismaBehavior>().IsOnRecharger();
         }
     }
@@ -29,7 +28,6 @@ public class TalismanRecharger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Recharger out");
             other.gameObject.GetComponentInChildren<TalismaBehavior>().IsOutOfRecharger();
         }
     }
