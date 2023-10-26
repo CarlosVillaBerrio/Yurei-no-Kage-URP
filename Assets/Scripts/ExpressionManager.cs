@@ -10,15 +10,15 @@ public class ExpressionManager : MonoBehaviour
     {
         if (other.CompareTag("Item"))
         {
-            yukiAnimator.SetBool("isTakingObject", true);
+            StartCoroutine(TemporalChangeBool());
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    IEnumerator TemporalChangeBool()
     {
-        if (other.CompareTag("Item"))
-        {
-            yukiAnimator.SetBool("isTakingObject", false);
-        }
+        yukiAnimator.SetBool("isTakingObject", true);
+        yield return new WaitForSeconds(1.5f);
+        yukiAnimator.SetBool("isTakingObject", false);
+
     }
 }
