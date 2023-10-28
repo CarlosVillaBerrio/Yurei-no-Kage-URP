@@ -15,10 +15,15 @@ public class TalismaBehavior : MonoBehaviour
 
     private bool isChargingLight = false;
 
+    public BoxCollider box;
+    public SphereCollider sphere;
+
     //float timeElapsed;
     //float lerpDuration = 3;
     void Start()
     {
+
+        
         light = GetComponent<Light>();
         light.intensity = lightRange;
     }
@@ -26,6 +31,7 @@ public class TalismaBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckLightOn();
         if (!isChargingLight)
         {
             if(light.intensity > 0f)
@@ -57,6 +63,20 @@ public class TalismaBehavior : MonoBehaviour
     public void IsOutOfRecharger()
     {
         isChargingLight = false;
+    }
+
+    public void CheckLightOn()
+    {
+        if(light.intensity <= 0f)
+        {
+            box.size = Vector3.zero;
+            sphere.radius = 0f;
+        }
+        else
+        {
+            box.size = new Vector3(0.44f, 1.32f, 5.64f);
+            sphere.radius = 1.51f;
+        }
     }
 
 
