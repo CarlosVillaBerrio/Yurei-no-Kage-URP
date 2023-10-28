@@ -53,7 +53,7 @@ namespace UniVRM10.FastSpringBones.System
                 if (_instance) return _instance;
 
                 var gameObject = new GameObject("FastSpringBone Service");
-                DontDestroyOnLoad(gameObject);
+                //DontDestroyOnLoad(gameObject);
                 _instance = gameObject.AddComponent<FastSpringBoneService>();
 
                 return _instance;
