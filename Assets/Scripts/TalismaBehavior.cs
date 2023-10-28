@@ -15,17 +15,15 @@ public class TalismaBehavior : MonoBehaviour
 
     private bool isChargingLight = false;
 
-    BoxCollider box;
-    SphereCollider sphere;
+    public BoxCollider box;
+    public SphereCollider sphere;
 
     //float timeElapsed;
     //float lerpDuration = 3;
     void Start()
     {
 
-        box = GetComponentInParent<BoxCollider>();
-        sphere = GetComponentInParent<SphereCollider>();
-
+        
         light = GetComponent<Light>();
         light.intensity = lightRange;
     }

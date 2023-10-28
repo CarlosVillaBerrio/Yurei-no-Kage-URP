@@ -12,13 +12,23 @@ public class ItemObject : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             Inventory.instance.AddItem(itemData);
 
-            Destroy(gameObject);
-        }   
+            Destroy(gameObject,1f);
+        }
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.gameObject.tag == "Player")
+    //    {
+    //        Inventory.instance.AddItem(itemData);
+
+    //        Destroy(gameObject);
+    //    }   
+    //}
 }

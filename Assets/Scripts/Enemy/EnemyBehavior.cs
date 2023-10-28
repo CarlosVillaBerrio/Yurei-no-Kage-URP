@@ -19,7 +19,7 @@ public class EnemyBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Soul")
         {
             Debug.Log("Player found");
             path.canMove = false;
@@ -28,14 +28,14 @@ public class EnemyBehavior : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Soul")
         {
             path.canMove = false;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Soul")
         {
             path.canMove = true;
         }
