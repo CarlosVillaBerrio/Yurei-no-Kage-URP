@@ -10,25 +10,15 @@ public class ItemObject : MonoBehaviour
     {
         gameObject.name = "Item - " + itemData.ItemName;
     }
+     
 
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             Inventory.instance.AddItem(itemData);
 
             Destroy(gameObject,1f);
         }
     }
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if(other.gameObject.tag == "Player")
-    //    {
-    //        Inventory.instance.AddItem(itemData);
-
-    //        Destroy(gameObject);
-    //    }   
-    //}
 }
