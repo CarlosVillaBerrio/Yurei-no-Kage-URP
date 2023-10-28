@@ -27,8 +27,7 @@ namespace Invector.vCharacterController
         {
             InitilizeController();
             InitializeTpCamera();
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            
         }
 
         protected virtual void FixedUpdate()
