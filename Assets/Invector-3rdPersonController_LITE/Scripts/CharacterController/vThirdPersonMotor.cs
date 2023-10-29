@@ -63,6 +63,8 @@ namespace Invector.vCharacterController
         internal PhysicMaterial frictionPhysics, maxFrictionPhysics, slippyPhysics;         // create PhysicMaterial for the Rigidbody
         internal CapsuleCollider _capsuleCollider;                                          // access CapsuleCollider information
 
+        public SoundManager soundManager;
+        
         #endregion
 
         #region Internal Variables
@@ -141,6 +143,8 @@ namespace Invector.vCharacterController
             colliderCenter = GetComponent<CapsuleCollider>().center;
             colliderRadius = GetComponent<CapsuleCollider>().radius;
             colliderHeight = GetComponent<CapsuleCollider>().height;
+
+            soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
             isGrounded = true;
         }
