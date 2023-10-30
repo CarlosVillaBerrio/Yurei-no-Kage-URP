@@ -46568,6 +46568,7 @@ GameObject:
   - component: {fileID: 1871908934}
   - component: {fileID: 1871908933}
   - component: {fileID: 1871908937}
+  - component: {fileID: 1871908938}
   m_Layer: 5
   m_Name: Main Menu UI
   m_TagString: Untagged
@@ -46673,6 +46674,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 9800d7a25b788d7499bbd6bbca0c1bb5, type: 2}
+--- !u!114 &1871908938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871908932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764e06b5547e87c41b711dff42b1fa24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1872835783
 PrefabInstance:
   m_ObjectHideFlags: 0
