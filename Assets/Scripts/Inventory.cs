@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
 
     public DoorManager doorManager;
 
-
+    private SoundManager soundManager;
 
     private void Awake()
     {
@@ -26,6 +26,8 @@ public class Inventory : MonoBehaviour
     {
         inventoryItems = new List<InventoryItem>();
         inventoryDictionary = new Dictionary<ItemData, InventoryItem>();
+
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     public void AddItem(ItemData _item)
@@ -42,6 +44,8 @@ public class Inventory : MonoBehaviour
         }
 
         doorManager.CheckForDoors(_item);
+        
+        soundManager.PlayEffect("Pickup");
 
     }
 
