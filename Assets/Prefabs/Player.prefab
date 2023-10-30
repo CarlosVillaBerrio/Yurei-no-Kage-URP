@@ -1543,9 +1543,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7375144275636868212}
+  - component: {fileID: 1036860278980361222}
+  - component: {fileID: 2202750400596431105}
   m_Layer: 3
   m_Name: Root
-  m_TagString: Untagged
+  m_TagString: Soul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1566,6 +1568,48 @@ Transform:
   - {fileID: 6750097268958818950}
   m_Father: {fileID: 1661577546515310638}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1036860278980361222
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129979530027984762}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.44, y: 1.32, z: 5.64}
+  m_Center: {x: 0, y: 0.73, z: 2.6}
+--- !u!135 &2202750400596431105
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129979530027984762}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.51
+  m_Center: {x: 0, y: 0.65, z: 0}
 --- !u!1 &2135180282865856372
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,7 +5415,7 @@ GameObject:
   - component: {fileID: 873201839719349397}
   m_Layer: 3
   m_Name: Talisman
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5797,6 +5841,7 @@ GameObject:
   - component: {fileID: 2643174935325501783}
   - component: {fileID: 147682130529207001}
   - component: {fileID: 6208293185949798913}
+  - component: {fileID: 8889205820968371660}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -6339,6 +6384,19 @@ CapsuleCollider:
   m_Height: 1.31
   m_Direction: 1
   m_Center: {x: 0, y: 0.65, z: 0}
+--- !u!114 &8889205820968371660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5906620169208170881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac6d2642d5781947b7aa75357472e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
 --- !u!1 &5907359879266330838
 GameObject:
   m_ObjectHideFlags: 0
@@ -8403,6 +8461,8 @@ MonoBehaviour:
   lightRange: 0.4
   dischargeRate: 0.02
   rechargeRate: 0.08
+  box: {fileID: 1036860278980361222}
+  sphere: {fileID: 2202750400596431105}
 --- !u!1 &7439096012478410735
 GameObject:
   m_ObjectHideFlags: 0

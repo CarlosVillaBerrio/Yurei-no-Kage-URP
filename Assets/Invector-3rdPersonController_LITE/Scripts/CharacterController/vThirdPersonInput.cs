@@ -27,6 +27,7 @@ namespace Invector.vCharacterController
         {
             InitilizeController();
             InitializeTpCamera();
+            
         }
 
         protected virtual void FixedUpdate()
