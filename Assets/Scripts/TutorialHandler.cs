@@ -12,7 +12,6 @@ public class TutorialHandler : MonoBehaviour
     private int index;
     private float firstTextDuration = 0f;
     public float textDuration = 7f;
-    private float textCounterDuration;
     private bool isActiveText = false;
     public GameObject panel;
     public GameObject player;
@@ -88,6 +87,8 @@ public class TutorialHandler : MonoBehaviour
             panel.gameObject.SetActive(true);
             isActiveText = true;
             player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+            player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+
             //player.GetComponent<Rigidbody>().isKinematic = true;
             //camSister.gameObject.SetActive(true);
         }
@@ -102,6 +103,8 @@ public class TutorialHandler : MonoBehaviour
             isActiveText = true;
             //player.GetComponent<Rigidbody>().isKinematic = true;
             player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+            player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+
             //camSister.gameObject.SetActive(true);
         }
     }
@@ -112,7 +115,9 @@ public class TutorialHandler : MonoBehaviour
         vThirdPersonInput.canMove = false;
         isActiveText = true;
         player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+        player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+
         //player.GetComponent<Rigidbody>().isKinematic = true;
         //camSister.gameObject.SetActive(true);
-    }    
+    }
 }
