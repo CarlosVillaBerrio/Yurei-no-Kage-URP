@@ -12,6 +12,7 @@ namespace Invector.vCharacterController
         public KeyCode jumpInput = KeyCode.Space;
         public KeyCode strafeInput = KeyCode.Tab;
         public KeyCode sprintInput = KeyCode.LeftShift;
+        public static bool canMove = true;
 
         [Header("Camera Input")]
         public string rotateCameraXInput = "Mouse X";
@@ -20,6 +21,7 @@ namespace Invector.vCharacterController
         [HideInInspector] public vThirdPersonController cc;
         [HideInInspector] public vThirdPersonCamera tpCamera;
         [HideInInspector] public Camera cameraMain;
+
 
         #endregion
 
@@ -39,13 +41,18 @@ namespace Invector.vCharacterController
 
         protected virtual void Update()
         {
-            InputHandle();                  // update the input methods
+            InputHandle();                  // update the input methods            
             cc.UpdateAnimator();            // updates the Animator Parameters
+
+            
         }
 
         public virtual void OnAnimatorMove()
         {
+            
             cc.ControlAnimatorRootMotion(); // handle root motion animations 
+
+            
         }
 
         #region Basic Locomotion Inputs
@@ -75,11 +82,24 @@ namespace Invector.vCharacterController
 
         protected virtual void InputHandle()
         {
-            MoveInput();
+            if (canMove)
+            {
+                MoveInput();
+                SprintInput();
+                JumpInput();
+                StrafeInput();
+                cc.lockMovement = false;
+                cc.lockRotation = false;
+
+            }
+            else
+            {
+                cc.inputMagnitude = 0f;
+                cc.lockMovement = true;
+                cc.lockRotation = true;
+                cc.Sprint(false);
+            }
             CameraInput();
-            SprintInput();
-            StrafeInput();
-            JumpInput();
         }
 
         public virtual void MoveInput()
