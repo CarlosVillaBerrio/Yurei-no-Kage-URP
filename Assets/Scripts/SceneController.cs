@@ -6,27 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    //private static SceneController instance;
-    //private void Awake()
-    //{
-    //    if (instance == null)
-    //    {
-    //        instance = this;
-    //        DontDestroyOnLoad(gameObject);
-    //    }
-    //    else
-    //    {
-    //        Destroy(gameObject);
-    //    }
-    //}
-    //public void StartGame()
-    //{
-    //    SceneManager.LoadScene("SchoolLevel");
-    //}
-
-    public void SchoolLevel()
+    private static SceneController instance;
+    private void Awake()
     {
-        SceneManager.LoadScene("SchoolLevel");
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    
+    public void LoadNextScene(string nextScene)
+    {
+        SceneManager.LoadScene(nextScene);
     }
 
     public void ExitGame()
