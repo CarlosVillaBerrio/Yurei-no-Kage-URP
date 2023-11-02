@@ -7,17 +7,17 @@ using TMPro;
 public class ItemObject : MonoBehaviour
 {
     [SerializeField] private ItemData itemData;
+    public GameObject objectToActivate;
     public TextMeshProUGUI text;
 
     private void OnValidate()
     {
         gameObject.name = "Item - " + itemData.ItemName;
-    }
-     
+    }     
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
         {
             int random = Random.Range(1, 3);
 
@@ -36,8 +36,9 @@ public class ItemObject : MonoBehaviour
 
             StartCoroutine(TextTrigger());
             Inventory.instance.AddItem(itemData);
-
-            Destroy(gameObject,1f);
+            if (objectToActivate != null)
+                objectToActivate.SetActive(true);
+            Destroy(gameObject, 1f);
         }
     }
 
