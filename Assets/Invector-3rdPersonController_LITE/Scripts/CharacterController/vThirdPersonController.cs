@@ -59,9 +59,9 @@ namespace Invector.vCharacterController
             if (input.magnitude <= 0.01)
             {
                 moveDirection = Vector3.Lerp(moveDirection, Vector3.zero, (isStrafing ? strafeSpeed.movementSmooth : freeSpeed.movementSmooth) * Time.deltaTime);
+                soundManager.PlayEffect("Walk", loop:true);
                 return;
             }
-
             if (referenceTransform && !rotateByWorld)
             {
                 //get the right-facing direction of the referenceTransform
@@ -76,6 +76,8 @@ namespace Invector.vCharacterController
             {
                 moveDirection = new Vector3(inputSmooth.x, 0, inputSmooth.z);
             }
+            
+            
         }
 
         public virtual void Sprint(bool value)

@@ -119,4 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 75ab429c83a9ecb48b1bdff17349a689, type: 2}
+  objectToActivate: {fileID: 0}
   text: {fileID: 0}
+  iconImg: {fileID: 0}
