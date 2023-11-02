@@ -23,4 +23,9 @@ public class CameraFocus : MonoBehaviour
         yield return new WaitForSeconds(3.5f);
         focusCam.gameObject.SetActive(false);
     }
+
+    private void OnDisable()
+    {
+        focusCam.gameObject.SetActive(false);
+    }
 }
