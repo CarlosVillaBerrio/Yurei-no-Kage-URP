@@ -30,7 +30,7 @@ public class TutorialHandler : MonoBehaviour
         {
 
             firstTextDuration -= Time.deltaTime;
-            if (Input.GetMouseButtonDown(0) || firstTextDuration < 0f)
+            if (Input.GetKeyDown(KeyCode.Space) || firstTextDuration < 0f)
             {
                 if (textComponent.text == lines[index])
                 {
