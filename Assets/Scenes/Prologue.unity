@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.0022506895, g: 0.030968249, b: 0.11075543, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -328,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_text
-      value: People tell me it's normal, but I feel like he wants to tell me something.
+      value: People said that it's normal, but I feel like she wants to tell me something.
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -339,6 +339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2722,6 +2727,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1384766605}
     m_Modifications:
+    - target: {fileID: 1038178500094812333, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.4826126
+      objectReference: {fileID: 0}
     - target: {fileID: 2740800234820095936, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_Name
@@ -2815,7 +2825,7 @@ PrefabInstance:
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -574
+      value: -567
       objectReference: {fileID: 0}
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -2835,7 +2845,7 @@ PrefabInstance:
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_text
-      value: Go to school and find out what happened with my death
+      value: Go to our school and find out the truth about my death.
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -2846,6 +2856,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033275761327298730, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 44.4163
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033275761327298730, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 11.9522
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033275761327298730, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10.896393
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033275761327298730, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.4149017
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6242,7 +6272,7 @@ PrefabInstance:
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -121
+      value: -117
       objectReference: {fileID: 0}
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -6262,7 +6292,7 @@ PrefabInstance:
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_text
-      value: I will do everything I can to help you!!!
+      value: I will do whatever it takes, so I can to help you!!!
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -11143,6 +11173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34749,8 +34784,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1038178500094812333, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038178500094812333, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 32
+      value: -0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 2508700540408439078, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -34805,7 +34845,7 @@ PrefabInstance:
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 129.0195
+      value: 133.6915
       objectReference: {fileID: 0}
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -34850,7 +34890,7 @@ PrefabInstance:
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -597
+      value: -564.664
       objectReference: {fileID: 0}
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -34875,12 +34915,12 @@ PrefabInstance:
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_text
-      value: Yuki, I need your help
+      value: Yuki, I need your help!.
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_margin.w
-      value: 33.517063
+      value: -5.5058517
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -34890,7 +34930,7 @@ PrefabInstance:
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_margin.y
-      value: -26.669632
+      value: 0.42785648
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -34932,6 +34972,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033275761327298730, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.95500004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033275761327298730, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 13.3742
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033275761327298730, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.7039032
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45090,6 +45145,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1384766605}
     m_Modifications:
+    - target: {fileID: 1038178500094812333, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.48259735
+      objectReference: {fileID: 0}
     - target: {fileID: 2740800234820095936, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_Name
@@ -45138,7 +45198,7 @@ PrefabInstance:
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 129.0195
+      value: 133.69
       objectReference: {fileID: 0}
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -45183,7 +45243,7 @@ PrefabInstance:
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -567
+      value: -564.66
       objectReference: {fileID: 0}
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -45198,6 +45258,11 @@ PrefabInstance:
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265811523304738214, guid: e89af75c5354ef54ab7981f396873e90,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
@@ -49419,7 +49484,7 @@ PrefabInstance:
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_text
-      value: Now I know that you do try to talk to me
+      value: Now I know that you do try to talk to me...
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
@@ -55794,26 +55859,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5260298956382625475, guid: e89af75c5354ef54ab7981f396873e90,
-        type: 3}
-      propertyPath: backgroundColor.a
-      value: 0.6313726
-      objectReference: {fileID: 0}
-    - target: {fileID: 5260298956382625475, guid: e89af75c5354ef54ab7981f396873e90,
-        type: 3}
-      propertyPath: backgroundColor.b
-      value: 0.44215024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5260298956382625475, guid: e89af75c5354ef54ab7981f396873e90,
-        type: 3}
-      propertyPath: backgroundColor.g
-      value: 0.44215024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5260298956382625475, guid: e89af75c5354ef54ab7981f396873e90,
-        type: 3}
-      propertyPath: backgroundColor.r
-      value: 0.4528302
-      objectReference: {fileID: 0}
     - target: {fileID: 5769234840229476925, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
       propertyPath: m_Pivot.x
@@ -55916,18 +55961,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
         type: 3}
-      propertyPath: m_spriteAsset
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
-        type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 6689390583056538238, guid: e89af75c5354ef54ab7981f396873e90,
-        type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
+      propertyPath: m_text
+      value: My sister passed away a few days ago and I still see her everywhere.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -8484,6 +8484,7 @@ MonoBehaviour:
   lightRange: 0.4
   dischargeRate: 0.02
   rechargeRate: 0.08
+  slider: {fileID: 0}
   box: {fileID: 1036860278980361222}
   sphere: {fileID: 2202750400596431105}
 --- !u!1 &7439096012478410735

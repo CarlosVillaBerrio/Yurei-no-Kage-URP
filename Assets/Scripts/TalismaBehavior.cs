@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TalismaBehavior : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class TalismaBehavior : MonoBehaviour
     public float rechargeRate = 0.08f;
 
     private bool isChargingLight = false;
+    public Slider slider;
 
     public BoxCollider box;
     public SphereCollider sphere;
@@ -23,7 +25,7 @@ public class TalismaBehavior : MonoBehaviour
     void Start()
     {
 
-        
+        slider.maxValue = lightRange;
         light = GetComponent<Light>();
         light.intensity = lightRange;
     }
@@ -31,6 +33,7 @@ public class TalismaBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        slider.value = light.intensity;
         CheckLightOn();
         if (!isChargingLight)
         {
