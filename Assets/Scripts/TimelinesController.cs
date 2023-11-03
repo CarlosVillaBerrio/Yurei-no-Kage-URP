@@ -20,7 +20,6 @@ public class TimelinesController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
             {
                 sceneManager.LoadNextScene(nextSceneName);
-                Debug.Log("Se presiono escape");
             }
     }    
 
