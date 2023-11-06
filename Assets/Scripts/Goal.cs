@@ -12,15 +12,16 @@ public class Goal : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            StartCoroutine(SceneTrigger());
+            //StartCoroutine(SceneTrigger());
+            SceneManager.LoadScene("Final Scene");
         }
     }
 
 
-    IEnumerator SceneTrigger()
-    {
-        text.gameObject.SetActive(true);
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("MainMenu");
-    }
+    //IEnumerator SceneTrigger()
+    //{
+    //    text.gameObject.SetActive(true);
+    //    yield return new WaitForSeconds(3f);
+    //    SceneManager.LoadScene("MainMenu");
+    //}
 }
