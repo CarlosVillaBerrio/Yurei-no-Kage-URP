@@ -19,6 +19,8 @@ public class GameOver : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
+            collision.gameObject.GetComponentInChildren<Animator>().SetBool("isPlayerDead", true);
+            collision.gameObject.GetComponent<AudioSource>().Play();
             expressionManager.ActivateDeath();
             gameObject.GetComponent<Rigidbody>().isKinematic = true;
             StartCoroutine(SceneTrigger());
