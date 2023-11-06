@@ -12994,10 +12994,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 0}
   musicTracks:
-  - sceneName: MainMenu
+  - sceneName: Prologue
     musicClip: {fileID: 8300000, guid: 2918a1dc591c67e4eb6225c3de3a852d, type: 3}
   - sceneName: SchoolLevel
     musicClip: {fileID: 8300000, guid: d51987ee5ecabf54fb81c582a05cfde8, type: 3}
+  - sceneName: Final Scene
+    musicClip: {fileID: 8300000, guid: 1152c7e5c24fa6b4a986b98ac554102c, type: 3}
+  - sceneName: MainMenu
+    musicClip: {fileID: 8300000, guid: 1659bc419cef0f84d847e4ed8fd5c3b4, type: 3}
   effectSourcePrefab: {fileID: 1060939508876975462, guid: 6dc4135d2129e264dafb89be9d93e019,
     type: 3}
   soundEffects:
