@@ -7,7 +7,7 @@ using TMPro;
 
 public class GameOver : MonoBehaviour
 {
-
+    public ExpressionManager expressionManager;
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -19,6 +19,10 @@ public class GameOver : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
+            collision.gameObject.GetComponentInChildren<Animator>().SetBool("isPlayerDead", true);
+            collision.gameObject.GetComponent<AudioSource>().Play();
+            expressionManager.ActivateDeath();
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
             StartCoroutine(SceneTrigger());
         }
     }
@@ -28,7 +32,7 @@ public class GameOver : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         text.gameObject.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("MainMenu");
     }
 }
