@@ -21,4 +21,9 @@ public class ExpressionManager : MonoBehaviour
         yukiAnimator.SetBool("isTakingObject", false);
 
     }
+
+    public void ActivateDeath()
+    {
+        yukiAnimator.SetBool("isDeath", true);
+    }
 }
