@@ -14,7 +14,7 @@ public class WriterEffect : MonoBehaviour
     private string currentText = "";
     private int index = 0;
 
-    private void Start()
+    private void OnEnable()
     {
         textComponent = GetComponent<TMP_Text>();
         fullText = textComponent.text; 
