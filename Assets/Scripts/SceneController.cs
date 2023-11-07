@@ -28,6 +28,6 @@ public class SceneController : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
     }
 }

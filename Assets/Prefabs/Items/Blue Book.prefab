@@ -122,3 +122,4 @@ MonoBehaviour:
   objectToActivate: {fileID: 0}
   text: {fileID: 0}
   iconImg: {fileID: 0}
+  expression: {fileID: 0}

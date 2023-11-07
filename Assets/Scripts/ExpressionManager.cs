@@ -6,18 +6,15 @@ public class ExpressionManager : MonoBehaviour
 {
     [SerializeField] private Animator yukiAnimator;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Item"))
-        {
-            StartCoroutine(TemporalChangeBool());
-        }
+    public void GrabbingObject()
+    {        
+       StartCoroutine(TemporalChangeBool());        
     }
 
     IEnumerator TemporalChangeBool()
     {
         yukiAnimator.SetBool("isTakingObject", true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.8f);
         yukiAnimator.SetBool("isTakingObject", false);
 
     }
