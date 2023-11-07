@@ -9002,7 +9002,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -106}
+  m_AnchoredPosition: {x: 50, y: -145}
   m_SizeDelta: {x: 470, y: 150}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &317109727
@@ -9025,7 +9025,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Giovanni Bellegarde - Vengeful Return
+  m_text: "Giovanni Bellegarde - Vengeful Return \nGoing Nowhere\nOne Eye Open"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5056dd7c1b0f3d04085420d7b64cb0f4, type: 2}
   m_sharedMaterial: {fileID: 8956234212765781692, guid: 5056dd7c1b0f3d04085420d7b64cb0f4,
