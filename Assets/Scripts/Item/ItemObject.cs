@@ -11,6 +11,7 @@ public class ItemObject : MonoBehaviour
     public TextMeshProUGUI text;
     public GameObject iconImg;
     bool canPick = true;
+    public GameObject expression;
 
 
     private void Start()
@@ -69,6 +70,7 @@ public class ItemObject : MonoBehaviour
             }
 
             StartCoroutine(TextTrigger());
+            expression.GetComponent<ExpressionManager>().GrabbingObject();
             Inventory.instance.AddItem(itemData);
             if (objectToActivate != null)
                 objectToActivate.SetActive(true);
